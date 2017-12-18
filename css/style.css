@@ -39,7 +39,7 @@ textarea {
   font-size: 13px;
 }
 
-.container { display:none;position:relative;background:white; border:solid; border-width:0px;box-sizing: border-box; width:100vmax; height:100%; max-width:350px; margin: 0 auto;}
+.container { display:block;position:relative;background:white; border:solid; border-width:0px;box-sizing: border-box; width:100vmax; height:100%; max-width:350px; margin: 0 auto;}
 
 
 #full-wrap {
@@ -61,7 +61,7 @@ textarea {
   and (device-width: 375px) 
   and (device-width: 667px)
      { 
-      .container {zoom: 3;}
+      .container {zoom: 2;}
 }
 
 input[type=number]::-webkit-inner-spin-button,
