@@ -58,10 +58,10 @@ textarea {
 }
 
 @media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px)
+  and (device-width: 375px) 
+  and (device-height: 667px)
      { 
-      .container {zoom: 6;}
+      .container {zoom: 2;}
 }
 
 input[type=number]::-webkit-inner-spin-button,
