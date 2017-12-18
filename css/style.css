@@ -61,7 +61,7 @@ textarea {
   and (min-device-width: 375px) 
   and (max-device-width: 667px)
      { 
-      .container {zoom: 3;}
+      .container {zoom: 6;}
 }
 
 input[type=number]::-webkit-inner-spin-button,
