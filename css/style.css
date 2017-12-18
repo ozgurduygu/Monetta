@@ -72,14 +72,14 @@ font-family: 'Figgins';
     and (device-width : 414px) 
     and (device-height : 736px) 
      { 
-      .container, .footer-container {zoom: 2;}
+      .container {zoom: 2;}
 }
 
 @media only screen 
   and (device-width: 375px)
   and (device-height : 667px) 
      { 
-      .container, .footer-container {zoom: 3;}
+      .container {zoom: 3;}
 }
 
 #footer {
