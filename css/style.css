@@ -39,7 +39,7 @@ textarea {
   font-size: 13px;
 }
 
-.container { display:block;position:relative;background:white; border:solid; border-width:0px;box-sizing: border-box; width:100vmax; height:100%; max-width:350px; margin: 0 auto;}
+.container { display:none;position:relative;background:white; border:solid; border-width:0px;box-sizing: border-box; width:100vmax; height:100%; max-width:350px; margin: 0 auto;}
 
 
 #full-wrap {
