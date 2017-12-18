@@ -1,0 +1,638 @@
+@font-face {
+    font-family: 'Gerbera';
+    src: url('https://github.com/tini2n/comma/raw/c672a59ee2dcaa86313b8594f0eb5c8239d3e7d1/assets/src/fonts/Gerbera-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@-ms-viewport{
+  width: device-width;
+}
+
+body {display:block; height:100%;
+  box-sizing:border-box;padding:0;
+  margin:0 auto; 
+  overflow-x:hidden;
+}
+
+input:disabled {
+  
+  -webkit-text-fill-color:#000; /* Override iOS / Android font color change */
+-webkit-opacity:1; /* Override iOS opacity change affecting text & background color */
+color:#000; /* Override IE font color change */
+}
+
+input,
+label,
+select,
+button,
+textarea {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  display: inline-block;
+  vertical-align: middle;
+  white-space: normal;
+  background: none;
+  line-height: 1;
+  /* Browsers have different default form fonts */
+  font-size: 13px;
+}
+
+.container { display:block;position:relative;background:white; border:solid; border-width:0px;box-sizing: border-box; width:100vmax; height:100%; max-width:350px; margin: 0 auto;}
+
+
+#full-wrap {
+  
+  width:100%;
+  height:100%;
+  overflow-x:hidden;
+  
+}
+
+@media only screen 
+    and (device-width : 414px) 
+    and (device-height : 736px) 
+    and (-webkit-device-pixel-ratio : 3) { 
+      .container {zoom: 2;}
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#currencies {
+  display: inline-flex;
+  position: relative;
+  top:-10vmax;
+  left:2.5vw;
+    width: 100%;
+   /* left: -184.29%; */
+  overflow-y: hidden; /* has to be scroll, not auto */
+  -webkit-overflow-scrolling: touch;
+  
+  
+}
+
+#scrolling { /* Carousel Frame */
+    overflow: hidden;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    
+    -webkit-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+li {
+    float: left;
+}
+
+
+.input {
+  
+  display: inline-block;
+  border-style: solid;
+  border-width: 0px;
+  width: 350px;
+  margin: 0 auto;
+  margin-left:1px;
+  margin-top: 10%;
+  
+}
+
+#coin_gbp, #coin_usd,
+#coin_huf, #coin_eur,
+#day_tea, #clock_coin,
+#fetus, #earth, #moon{
+  
+  width:5vmax;
+  height:auto;
+}
+
+#day_tea {
+  
+  stroke-width: 0px; 
+  background:white;
+  
+}
+
+#day_tea.overlapping {
+  background:none;
+  position: relative;
+  left:-4.8vmax;
+  top:.1vmax;
+  mix-blend-mode: multiply;
+  
+}
+
+#fetus.overlapping {
+  background:none;
+  position: relative;
+  left:-5vmax;
+  top:.1vmax;
+  mix-blend-mode: multiply;
+  
+}
+
+#moon.overlapping {
+  background:none;
+  position: relative;
+  left:-5vmax;
+  top:.1vmax;
+  mix-blend-mode: multiply;
+  
+}
+
+#earth.overlapping {
+  background:none;
+  position: relative;
+  left:-5vmax;
+  top:.1vmax;
+  mix-blend-mode: multiply;
+  
+}
+
+#clock_coin.overlapping {
+  background:none;
+  position: relative;
+  left:-4.8vmax;
+  top:.1vmax;
+  mix-blend-mode: multiply;
+  
+}
+
+.forminputcontent {
+  display:inline;
+  height: 2vmax;
+  width:60%;
+  color:black!important;
+  border-bottom: solid;
+  border-width: .4vmax;
+  position:relative;
+  top:-3vmax;
+  left:6vmax;
+  font-family:"Gerbera";
+  font-size:2vmax;
+  -webkit-appearance: none;
+  border-radius: 0;
+
+
+} 
+
+.formoutputcontent:disabled  {
+  display:inline;
+  height: 2vmax;
+  width:60%;
+  color:black!important;
+
+  border-bottom: solid;
+  border-width: .4vmax;
+  position:relative;
+  top:-3vmax;
+  left:6vmax;
+  font-family:"Gerbera";
+  font-size:2vmax;
+  -webkit-appearance: none;
+  border-radius: 0;
+
+
+} 
+
+.input_highlight {
+  
+  content:"";
+  display:inline-block;
+  position:relative;
+  background:yellow;
+  width:30%;
+  right:2vw;
+  height:3vw;
+  
+  
+}
+
+.daily {
+  right:3vw;
+  width:18%;
+}
+
+
+.weekly {
+  right:3.4vw;
+  width:12%;
+}
+
+.monthly {
+  right:3vw;
+  width:18%;
+}
+
+.yearly {
+  right:3vw;
+  width:18%;
+}
+
+.input-label-hours {
+  position:relative;
+  top:-4vmax;
+  left:-6vmax;
+  font-family: 'Gerbera', sans-serif;
+  font-size:1vmax;
+  z-index:3;
+  isolation: isolate;
+  color:yellow;
+  
+  
+
+  
+}
+
+.input-label-hours::after {
+  position:absolute;
+  content:"";
+  width:350px; 
+  height:8vmax;
+  left:-4.4vmax;
+  top:-1vmax;
+  color:black;
+  font-size:1vmax;
+  
+  
+  
+}
+
+.input-label-hours::before {
+  content:"";
+  width:10vmax; 
+  height:3vmax;
+  position:absolute;
+  z-index:-1;
+  color: white;
+  top:-2vmax;
+  left:-.2vmax;
+  background-image: url("data:image/svg+xml,%3Csvg width='7.5' height='7.5' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23000000' fill-opacity='1' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+  /*-webkit-background-clip: text;
+
+    -webkit-text-fill-color: transparent;*/
+  font-size:1vmax;
+  
+}
+
+.years::after {
+  
+  content:"YEARS:";
+  text-shadow: 4px 4px 0 #fff, 3px 3px 0 #fff, 2px 2px 0 #fff, 1px 1px 0 #fff;
+  z-index:4;
+  left:-2.2vmax;
+}
+
+.months::after {
+  
+  content:"MONTHS:";
+  text-shadow: 4px 4px 0 #fff, 3px 3px 0 #fff, 2px 2px 0 #fff, 1px 1px 0 #fff;
+  z-index:4;
+  left:-3vmax;
+}
+
+.weeks::after {
+  
+  content:"WEEKS:";
+  text-shadow: 4px 4px 0 #fff, 3px 3px 0 #fff, 2px 2px 0 #fff, 1px 1px 0 #fff;
+  z-index:4;
+  left:-1vmax;
+}
+
+.hours::after {
+  
+  content:"HOURS:";
+}
+
+.days::after {
+  
+  content:"DAYS:";
+  left:-3vmax;
+}
+
+.days {background-image: url("data:image/svg+xml,%3Csvg width='7.5' height='7.5' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='yellow' fill-opacity='1' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");}
+
+.hours::before {
+  
+  content:"NEVER GET TO KNOW YOURSELF";
+  
+}
+
+.weeks::before {
+  
+  content:"EMBRACE YOUR INNER CHILD";
+  font-size:1.4vw;
+  width:12vmax; 
+  height:3.4vmax;
+  
+}
+
+.months::before {
+  
+  content:"DON'T FORG ET TO TA K E YOUR PILLS";
+  -webkit-background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+  
+}
+
+.years::before {
+  
+  content:"NEVER GET TO KNOW YOURSELF";
+  font-size:.8vw;
+  width:11vmax; 
+  height:2.8vmax;
+  
+}
+
+.days::before {
+  
+  content:"WAKEUPWA KE UP Wake up!";
+  -webkit-background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+}
+
+#times {
+  
+  position:relative;
+  top:-6vmax;
+  left:1.2vmax;
+}
+
+.input-label {
+  position:relative;
+  top:-4vmax;
+  left:-1vmax;
+  font-family: 'Gerbera', sans-serif;
+  font-size:1vmax;
+  z-index:3;
+  isolation: isolate;
+  
+  
+
+  
+}
+
+.input-label::after {
+  position:absolute;
+  content:"";
+  width:350px; 
+  height:8vmax;
+  left:-4.4vmax;
+  top:-1vmax;
+  
+  
+  
+}
+
+.input-label::before {
+  content:"ENTER YOUR GOAL";
+  width:10vmax; 
+  height:1vmax;
+  position:absolute;
+  z-index:;
+  color: white;
+  top:.15vmax;
+  left:.3vmax;
+  background: yellow;
+  mix-blend-mode: multiply;
+  font-size:1vmax;
+  
+}
+
+.eur::before {
+  
+  content:"ACHTUNG!ACHTUNG!";
+  width:11vmax; 
+  
+}
+
+.usd::before {
+  
+  content:"OBEYOBEYOBEY";
+  
+}
+
+.huf::before {
+  
+  content:"ARE YOU BROKE FAM?";
+  width:10.8vmax; 
+  
+}
+
+li::after {
+  content: "";
+  position:relative;
+  display:block;
+  
+background-image: url("data:image/svg+xml,%3Csvg width='7.5' height='7.5' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23000000' fill-opacity='1' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+  width:5.1vmax;
+  height:.4vmax;
+  top:-3.38vmax;
+  left:1vmax;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  background: none;
+  
+
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  height:1vmax;
+  background: yellow;
+  box-sizing:content-box;
+  border: solid;
+  border-color: white;
+  border-width: .25vmax;
+
+}
+
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  
+  border: solid;
+  border-width: .25vmax;
+  border-color: white;
+  
+  height: 2.5vmax;
+  width: 2.5vmax;
+  margin-top:-.75vmax;
+  background: rgba(255,255,255,0.2);
+  position: relative;
+  box-shadow: inset 0 0 0 .25vmax #000, inset 0 0 0 .5vmax #fff;
+
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  
+  border: solid;
+  border-width: .25vmax;
+  border-color: white;
+  
+  height: 2.5vmax;
+  width: 2.5vmax;
+  margin-top:-.75vmax;
+  background: rgba(255,255,255,0.2);
+  position: relative;
+  box-shadow: inset 0 0 0 .25vmax #000, inset 0 0 0 .5vmax #fff;
+
+}
+
+
+
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type="number"]#textInput {
+  background: none;
+  border: none;
+  font-size: 10vmax;
+}
+
+#input-hourlywage {
+  width:100%;
+  display:flex-inline;
+  margin: 0 auto;
+  position: relative;
+  top: -10vmax;
+  
+}
+
+#textInput {
+  width:100%;
+  box-sizing:border-box;
+  position:relative;
+  margin:0 auto;
+  bottom:-7vmax;
+  text-align: center; 
+  font-family: 'Magra', sans-serif;
+  text-shadow: 4px 4px 0 #fff, 3px 3px 0 #fff, 2px 2px 0 #fff, 1px 1px 0 #fff;
+  z-index:4;
+
+
+  
+}
+
+#rangeInput {
+  position:relative;
+  width:350px;
+  margin:0 auto;
+  top:-8vmax;
+ 
+  
+}
+#coinstack {
+ 
+  position:relative;
+  width:120%!important;
+  margin:0 auto;
+  left:-10%;
+  top:-2vw;
+
+  
+       
+
+}
+
+.input-hourlywage-label {
+  
+  width:100%;
+  text-align:center;
+  position:relative;
+  margin:0 auto;
+  bottom:-14vmax;
+  font-family:"Gerbera";
+  font-size:1vmax;
+  
+  
+}
+
+.input-hourlywage-asterisk {
+  
+  width:100%;
+  text-align:center;
+  position:relative;
+  margin:0 auto;
+  top:-3vmax;
+  font-family:"Gerbera";
+  font-size:1vmax;
+  
+  
+}
+
+.input-currencies-asterisk {
+  position:relative;
+  margin:0 auto;
+  top:-12vmax;
+  font-family:"Gerbera";
+  font-size:1vmax;
+  left:3vmax;
+  
+  
+}
+
+.input-times-asterisk {
+  position:relative;
+  display:block;
+  margin:0 auto;
+  top:-6vmax;
+  font-family:"Gerbera";
+  font-size:1vmax;
+  left:1.1vmax;
+  width:115%;
+  
+  
+}
+#clear_label {
+  position:fixed;
+  background:white;
+  padding:1vw;
+  cursor:pointer;
+  z-index:999;
+  margin-left:-2.8vmax;
+  margin-top:1.4vmax;
+ 
+  
+}
+
+.hide {
+  display:none;
+}
+
+
+#input-hourlywage-currency {
+  
+  position:relative;
+  height:0vmax;
+  top:16vmax;
+  text-align: center; 
+  font-family: 'Magra', sans-serif;
+  text-shadow: 4px 4px 0 #fff, 3px 3px 0 #fff, 2px 2px 0 #fff, 1px 1px 0 #fff;
+  z-index:3;
+  font-size:5vmax;
+  display:inline-block;
+
+
+  
+}
+
+
+input::-webkit-input-placeholder {
+color: black !important;
+}
