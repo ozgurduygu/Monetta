@@ -5,6 +5,20 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: "Figgins";
+    src: url("https://github.com/shukadesign/getpure.org/raw/0f271ef61dabf63be1839e0aaf734ff5a3f0bb2f/assets/fonts/Figgins/Figgins.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "William";
+    src: url("https://github.com/alisabeata/alisabeata.github.io/raw/1ef30c160f5d54c29b05a56b89abb48b2c8fe594/react/test-react-articles/fonts/William.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+}
+
 @-ms-viewport{
   width: device-width;
 }
@@ -41,6 +55,10 @@ textarea {
 
 .container { display:block;position:relative;background:white; border:solid; border-width:0px;box-sizing: border-box; width:100vmax; height:100%; max-width:350px; margin: 0 auto;}
 
+.footer-container { display:flex;position:relative;background:black; border:solid; border-width:0px; width:100vmax; height:100%; max-width:500px; margin: 0 auto;
+font-family: 'Figgins';
+}
+
 
 #full-wrap {
   
@@ -59,9 +77,18 @@ textarea {
 
 @media only screen 
   and (device-width: 375px) 
-  and (device-height: 667px)
      { 
       .container {zoom: 2;}
+}
+
+#footer {
+  padding:4vmax;
+  top:-2vmax;
+  background:black;
+  color:white;
+  height:7vmax;
+  
+  
 }
 
 input[type=number]::-webkit-inner-spin-button,
@@ -74,7 +101,7 @@ input[type=number]::-webkit-outer-spin-button {
   display: inline-flex;
   position: relative;
   top:-10vmax;
-  left:2.5vw;
+  left:2.5vmax;
     width: 100%;
    /* left: -184.29%; */
   overflow-y: hidden; /* has to be scroll, not auto */
@@ -219,30 +246,30 @@ li {
   position:relative;
   background:yellow;
   width:30%;
-  right:2vw;
-  height:3vw;
+  right:2vmax;
+  height:3vmax;
   
   
 }
 
 .daily {
-  right:3vw;
+  right:3vmax;
   width:18%;
 }
 
 
 .weekly {
-  right:3.4vw;
+  right:3.4vmax;
   width:12%;
 }
 
 .monthly {
-  right:3vw;
+  right:3vmax;
   width:18%;
 }
 
 .yearly {
-  right:3vw;
+  right:3vmax;
   width:18%;
 }
 
@@ -338,7 +365,7 @@ li {
 .weeks::before {
   
   content:"EMBRACE YOUR INNER CHILD";
-  font-size:1.4vw;
+  font-size:1.4vmax;
   width:12vmax; 
   height:3.4vmax;
   
@@ -356,7 +383,7 @@ li {
 .years::before {
   
   content:"NEVER GET TO KNOW YOURSELF";
-  font-size:.8vw;
+  font-size:.8vmax;
   width:11vmax; 
   height:2.8vmax;
   
@@ -550,7 +577,7 @@ input[type="number"]#textInput {
   width:120%!important;
   margin:0 auto;
   left:-10%;
-  top:-2vw;
+  top:-2vmax;
 
   
        
@@ -609,7 +636,7 @@ input[type="number"]#textInput {
 #clear_label {
   position:fixed;
   background:white;
-  padding:1vw;
+  padding:1vmax;
   cursor:pointer;
   z-index:999;
   margin-left:-2.8vmax;
