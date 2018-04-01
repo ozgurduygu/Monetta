@@ -1,0 +1,83 @@
+@import url("https://use.typekit.net/btc7bre.css");
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+body {
+  margin: 0!important;
+  padding: 0!important;
+}
+
+#body {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0!important;
+  padding: 0;
+}
+
+#header {
+  position: absolute;
+  font-family: "Circular Spotify Tx T";
+  font-weight: bold;
+  font-size: 6vw;
+  top: 10vw;
+  left: 6vw;
+  color: #121212;
+}
+
+#sub-body {
+  position: absolute;
+  background: #121212;
+  width: 94vw;
+  height: 20vw;
+  top: 19vw;
+  margin: 0 auto;
+  margin-left: 3vw;
+}
+
+#point-out {
+  position: absolute;
+  font-family: "Circular Spotify Tx T";
+  font-weight: bold;
+  font-size: 6vw;
+  top: 48vw;
+  left: 6vw;
+  color: #121212;
+}
+
+#down {
+  width: 100vw;
+  height: 0;
+  float: right;
+  padding-top: 48vw;
+  padding-left: 78vw;
+  position: absolute;
+
+}
+
+#arrow {
+  width: 7vw;
+  height: auto;
+
+}
+
+.b01 {
+  position: absolute;
+  color: white;
+  font-family: "Circular Spotify Tx T";
+  font-weight: 800;
+  letter-spacing: -1.04vw;
+  font-size: 12vw;
+  margin-top: 10vw;
+  margin-left: 2vw;
+  
+  
+}
+
+.letter {
+  
+  opacity: 0;
+}
